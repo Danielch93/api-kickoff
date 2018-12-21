@@ -1,0 +1,37 @@
+{
+  "name": "api-kickoff",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -w",
+    "dev": "ts-node ./lib/index.ts",
+    "start": "nodemon ./dist/index.js",
+    "prod": " npm run build && npm run start ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Danielch93/api-kickoff.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Danielch93/api-kickoff/issues"
+  },
+  "homepage": "https://github.com/Danielch93/api-kickoff#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-typescript": "^5.0.0",
+    "nodemon": "^1.18.9",
+    "typescript": "^3.2.2"
+  },
+  "dependencies": {
+    "@types/express": "^4.16.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.0",
+    "ts-node": "^7.0.1"
+  }
+}
